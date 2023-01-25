@@ -38,7 +38,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction:column;
-    /* border:1px solid red; */
+    border:1px solid red;
     border-radius:3rem;
 }
 
@@ -114,4 +114,49 @@ h1 {
     top:50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+/* ACTIVE STATE STYLES MOBILE */
+.share-div-active {
+    background-color: var(--heading-color);
+    padding:2.5rem 6rem;
+    border:1px solid red;
+    border-radius: 0 0 3rem 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.share-div-active p {
+    color: var(--paragraph-color);
+    font-size:4rem;
+    margin-right:5rem;
+    letter-spacing: 1.5rem;
+}
+.share-social-icons {
+    display: flex;
+}
+
+.logo {
+    width:60px;
+    height:60px;
+    margin-right:3rem;
+}
+.share-div-2 {
+    border:1px solid red;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: relative;
+    background-color: var(--paragraph-color);
+}
+.share-icon-2 {
+    filter:invert(1) contrast(100%) sepia(70%) saturate(100%);
+    position:absolute;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    
+    top: 50%;
+    left:50%;
+    transform:translate(-50%, -50%);
 }
