@@ -74,6 +74,7 @@ h1 {
     /* margin: 3rem 0; */
 }
 
+
 .avatar-div {
     display: flex;
     align-items: center;
@@ -124,10 +125,11 @@ h1 {
     /* border:1px solid red; */
     border-radius: 0 0 3rem 3rem;
     width: 100%;
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
 }
+
 .share-div-active p {
     color: var(--paragraph-color);
     font-size:3.5rem;
