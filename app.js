@@ -1,5 +1,5 @@
 //SELECTORS
-const shareDiv = document.querySelector(".share-div");
+const shareDivBtn = document.querySelector(".share-div");
 const activeShareBtn = document.querySelector(".share-div-2");
 const authorDiv = document.querySelector(".author-div");
 const activeShareDiv = document.querySelector(".share-div-active");
@@ -18,5 +18,5 @@ function closeShareLinks() {
 }
 
 //EVENT LISTENERS
-shareDiv.addEventListener("click", showShareLinks);
+shareDivBtn.addEventListener("click", showShareLinks);
 activeShareBtn.addEventListener("click", closeShareLinks);
