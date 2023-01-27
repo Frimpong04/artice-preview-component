@@ -7,7 +7,7 @@ const activeShareDiv = document.querySelector(".share-div-active");
 //FUNCTION DEFINITIONS
 function showShareLinks() {
     console.log("I have been clicked");
-    authorDiv.style.display = "none";
+    authorDiv.classList.add("show-author-div");
     activeShareDiv.style.display = "flex";
 }
 
