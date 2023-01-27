@@ -242,6 +242,7 @@ h1 {
         border-radius: 3rem;
         width: 600px;
         justify-content:space-evenly;
+        box-shadow: var(--body-bg) 0px 15px 25px, var(--paragraph-color) 0px 5px 10px;
     }
 
     .share-div-active::after {
