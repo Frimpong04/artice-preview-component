@@ -1,7 +1,7 @@
 //SELECTORS
 const shareDivBtn = document.querySelector(".share-div");
-const activeShareBtn = document.querySelector(".share-div-2");
 const authorDiv = document.querySelector(".author-div");
+const activeShareBtn = document.querySelector(".share-div-2");
 const activeShareDiv = document.querySelector(".share-div-active");
 
 //FUNCTION DEFINITIONS
