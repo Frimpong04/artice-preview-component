@@ -204,7 +204,7 @@ h1 {
 
     /* image section */
     .product-image {
-        width:100%;
+        max-width:100%;
         height: 100%;
         object-fit: cover;
         border-radius:3rem 0 0 3rem;
@@ -214,7 +214,7 @@ h1 {
     .text-div {
         position:relative;
         border-radius:0 3rem 3rem 0;
-        padding:3rem;
+        padding:2.2rem;
         border:1px solid blue;
     }
 
@@ -225,7 +225,7 @@ h1 {
 
     .text-div > p {
         font-size:3rem;
-        margin: 2.5rem 0;
+        margin: 2rem 0;
         line-height:1.4;
     }
 
@@ -244,6 +244,18 @@ h1 {
         justify-content:space-evenly;
     }
 
+    .share-div-active::after {
+        content:"";
+        width: 0px;
+        height: 0px;
+        border-top: 40px solid var(--heading-color);
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        position:absolute;
+        bottom:-48px;
+        right: 34%;
+    }
     /* share social icons */
     /* hide the share paragraph text */
     .share-social-icons > p {
