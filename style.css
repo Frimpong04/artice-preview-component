@@ -54,6 +54,7 @@ main {
     padding:6rem 6rem 0rem;
     background-color:white;
     border-radius:0 0 3rem 3rem;
+    position: relative;
 }
 
 h1 {
@@ -105,16 +106,21 @@ h1 {
     font-weight: bold;
 }
 .share-div {
+    position: relative;
+    z-index: 20;
+    border: 2px solid green;
     width: 90px;
     height: 90px;
     border-radius: 50%;
     background-color: var(--share-bg);
     transition:all 0.45s cubic-bezier(.35,2.03,.64,.75);
 }
-
-.share-div:hover {
-    background-color:var(--heading-color);
+.share-div-active-bg {
+    background-color:var(--paragraph-color);
 }
+/* .share-div:hover {
+    background-color:var(--heading-color);
+} */
 .share-icon {
     /* border: 1px solid red; */
     width: 60px;
@@ -127,26 +133,38 @@ h1 {
     transition:all 0.45s cubic-bezier(.35,2.03,.64,.75);
 }
 
-.share-icon:hover {
-    filter:brightness(0) invert(1);
+.share-icon-active {
+    filter: brightness(0) invert(1);
 }
+
+/* .share-icon:hover {
+    filter:brightness(0) invert(1);
+} */
 
 /* ACTIVE STATE STYLES MOBILE */
 .share-div-active {
     background-color: var(--heading-color);
-    padding:2.5rem 6rem;
+    padding:4rem 6rem;
     /* border:1px solid red; */
     border-radius: 0 0 3rem 3rem;
     width: 100%;
     display: none;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index:2;
+}
+
+.show-share-div-active {
+    display: flex;
 }
 
 .share-div-active p {
     color: var(--paragraph-color);
     font-size:3.5rem;
-    margin-right:5rem;
+    margin-right:2rem;
     letter-spacing: 1.5rem;
 }
 .share-social-icons {
@@ -156,7 +174,7 @@ h1 {
 .logo {
     width:60px;
     height:60px;
-    margin-right:3rem;
+    margin-right:2rem;
     transition:all 0.45s cubic-bezier(.35,2.03,.64,.75);
 }
 
@@ -258,9 +276,10 @@ h1 {
         right: 34%;
     }
     /* share social icons */
-    /* hide the share paragraph text */
-    .share-social-icons > p {
-        /* display: none; */
+    /* hide the share links div */
+    
+    .hide-share-div {
+        display: none;
     }
 
     .logo {
