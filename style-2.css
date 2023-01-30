@@ -24,7 +24,7 @@ body {
 }
 
 main {
-    border:1px solid red;
+    /* border:1px solid red; */
     max-width:980px;
     height:50vh;
     display: flex;
@@ -41,6 +41,7 @@ main {
 }
 
 .text-div {
+    position: relative;
     flex:1 1 20rem;
     padding: 2rem;
     width: 100%;
@@ -93,8 +94,9 @@ p {
     height: 6rem;
     border-radius: 50%;
     background-color:var(--share-bg);
-    border:1px solid blue;
+    /* border:1px solid blue; */
     position: relative;
+    z-index:10;
 }
 
 .share-icon {
@@ -104,6 +106,7 @@ p {
     transform: translate(-50%, -50%);
     pointer-events: none;
 }
+
 
 .share-div-active {
     display: none;
@@ -140,3 +143,73 @@ p {
     right: 38%;
 }
 
+@media only screen and (max-width: 765px)  {
+    html {
+        font-size: 55%;
+    }
+
+    body {
+        padding: 4rem 0;
+    }
+    main {
+        width: 80%;
+    }
+
+    .product-image {
+        border-radius: 3rem 3rem 0 0;
+    }
+
+    .text-div {
+        border-radius: 0 0 3rem 3rem;
+        /* border:1px solid blue; */
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    .text-div > p {
+        margin-bottom: 2.5rem;
+        line-height:1.4;
+    }
+
+    .share-div {
+        background-color:var(--body-bg);
+    }
+    .show-share-div-active {
+        width: 100%;
+        height: auto;
+        padding: 1rem 2rem 3rem;
+        position:absolute;
+        left:0;
+        top:77%;
+        /* bottom:0; */
+        /* border:1px solid green; */
+        border-radius:0 0 3rem 3rem;
+        box-shadow: none;
+        justify-content: flex-start;
+    }
+
+    .show-share-div-active > p {
+        font-size:3rem;
+    }
+    .show-share-div-active::after {
+        border-top: none;
+        border-right:none;
+        border-left: none;
+        border-bottom: none;
+    }
+
+    .share-div-active-bg {
+        background-color:var(--paragraph-color);
+    }
+    .share-icon-active {
+        filter: brightness(0) invert(1);
+    }
+
+    .logo {
+        width:5em;
+        height:5rem;
+        margin-left: 2rem;
+    }
+}
