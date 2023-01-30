@@ -265,7 +265,7 @@ h1 {
 
     /* share div active section styles */
     .share-div-active {
-        border:2px solid blue;
+        /* border:2px solid blue; */
         position: absolute;
         padding:1rem 1rem;
         width: auto;
@@ -281,12 +281,12 @@ h1 {
         content:"";
         width: 0px;
         height: 0px;
-        border-top: 40px solid var(--heading-color);
-        border-left: 20px solid transparent;
-        border-right: 20px solid transparent;
-        border-bottom: 20px solid transparent;
+        border-top: 10px solid var(--heading-color);
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid transparent;
         position:absolute;
-        bottom:-48px;
+        bottom:-20px;
         right: 10%;
     }
 
