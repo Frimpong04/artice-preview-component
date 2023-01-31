@@ -125,7 +125,7 @@ p {
     border-radius: 2rem;
     position: relative;
     right:-70%;
-    top: -45%;
+    top: -35%;
 
     box-shadow:var(--body-bg) 0px 15px 25px, var(--paragraph-color) 0px 5px 10px;
 }
@@ -223,4 +223,10 @@ p {
     .show-share-div-active {
         top:81%;
     }
+
+    .share-div {
+        width:4rem;
+        height:4rem;
+    }
 }
+
